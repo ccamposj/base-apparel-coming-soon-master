@@ -16,55 +16,66 @@
   <body>
     <main>
       <section class="subscription">
-        <img src="/images/logo.svg" alt="" class="subscription__icon mg-left" />
+        <div>
+          <img
+            src="/images/logo.svg"
+            alt=""
+            class="subscription__icon mg-left"
+          />
+        </div>
         <picture class="picture">
-          <source srcset="/images/hero-desktop.jpg" media="(min-width: 54em)" />
+          <source
+            srcset="/images/hero-desktop.jpg"
+            media="(min-width: 46.875em)"
+          />
           <img
             src="/images/hero-mobile.jpg"
             alt=""
             class="subscription__hero-img"
           />
         </picture>
-        <h1 class="subscription__heading mg-left">
-          <span class="subscription__heading--light"> We're</span> coming soon
-        </h1>
-        <p class="subscription__text mg-left">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <!-- The novalidate attribute helped to stop showing the default browser validation and make my JS code work! -->
-        <form class="subscription__form mg-left" novalidate>
-          <input
-            class="subscription__input"
-            type="email"
-            placeholder="Email Address"
-            required
-          />
-          <button type="submit" class="btn">
-            <svg
-              class="subscription__arrow-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="20"
+        <div class="subscription__info">
+          <h1 class="subscription__heading mg-left">
+            <span class="subscription__heading--light"> We're</span> coming soon
+          </h1>
+          <p class="subscription__text mg-left">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <!-- The novalidate attribute helped to stop showing the default browser validation and make my JS code work! -->
+          <form class="subscription__form mg-left" novalidate>
+            <input
+              class="subscription__input"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button type="submit" class="btn">
+              <svg
+                class="subscription__arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="20"
+              >
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M1 1l8.836 8.836L1 18.671"
+                />
+              </svg>
+            </button>
+            <img
+              src="/images/icon-error.svg"
+              class="subscription__error-icon hidden"
+              alt=""
+            />
+            <span class="subscription_error-msg hidden"
+              >Please provide a valid email</span
             >
-              <path
-                fill="none"
-                stroke="#FFF"
-                stroke-width="2"
-                d="M1 1l8.836 8.836L1 18.671"
-              />
-            </svg>
-          </button>
-          <img
-            src="/images/icon-error.svg"
-            class="subscription__error-icon hidden"
-            alt=""
-          />
-          <span class="subscription_error-msg hidden"
-            >Please provide a valid email</span
-          >
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
